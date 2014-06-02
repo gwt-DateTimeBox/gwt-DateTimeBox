@@ -3,6 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gwt-datetimebox-parent</artifactId>
+    <modules>
+        <module>clearbox</module>
+        <module>interfaces</module>
+    </modules>
     <groupId>com.github.gwt-DateTimeBox</groupId>
     <version>0.1.0-SNAPSHOT</version>
 	
@@ -11,6 +15,22 @@
     <properties>
         <gwt.version>2.6.0</gwt.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>interfaces</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>interfaces</artifactId>
+                <version>${project.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+        </dependencies>
+   </dependencyManagement>
 	
 	<dependencies>
         <dependency>
