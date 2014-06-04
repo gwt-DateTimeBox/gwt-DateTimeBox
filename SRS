@@ -1,0 +1,44 @@
+Version: 1.0
+
+System:
+    Any GWT developer, familiar with maven, should be able to use and configure
+        DateTimeBox widget in less than 5 min.
+    Any user without learning should be able to any pick date and time in
+        the current decade with less than 7 clicks.
+
+Process:
+    UML 2.0 diagrams.
+    Patterns.
+    Git (branches, clean history).
+    Test Driven Development.
+
+Product:
+    Functional:
+        Ability to pick date and time from single widget.
+        Ability to set any GWT supported format for date string.
+        Week start day based on locale.
+        Months and week day names based on locale.
+
+        7 or less clicks to select any date and time in the current decade.
+        5 or less clicks to select any date in the current decade.
+        7 or less clicks to select any date in the current century.
+        3 or less clicks to select any time for given date.
+
+        Ability to clear input field with single click.
+        Ability to set placeholder for input.
+
+        Style:
+            Ability to style weekends separately.
+            Ability to set holidays and style each of them separately.
+            Ability to style selected value and current value separately.
+
+    Nonfunctional:
+        No javascript. Plain Java in GWT.
+
+    Constraints:
+        No customization for mobile platforms.
+        Built-in GWT localization, no special localizations.
+
+    Additional:
+        Showcase of features.
+        Full standard JavaDoc.
