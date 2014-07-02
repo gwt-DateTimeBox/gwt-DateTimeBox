@@ -1,0 +1,33 @@
+.grid {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-spacing: 2px;
+}
+
+.cell {
+    text-align: center;
+    padding: 4px;
+    outline: none;
+
+    border: 1px solid #cde6f9;
+    color: #0a5a95;
+    background: #ffffff;
+}
+
+.isHighlighted {
+    background: #F0E68C;
+}
+
+.isDisabled {
+    color: #AAAAAA;
+}
+
+.isSelected {
+    border: 1px solid #bd5153;
+    color: #000;
+
+    text-align: center;
+    padding: 4px;
+    outline: none;
+}
+

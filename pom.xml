@@ -12,6 +12,7 @@
         <module>clearbox</module>
         <module>interfaces</module>
         <module>layerpanel</module>
+        <module>cellgrid</module>
     </modules>
 
     <properties>
