@@ -3,14 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gwt-datetimebox-parent</artifactId>
+    <groupId>com.github.gwt-DateTimeBox</groupId>
+    <version>0.1.0-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
     <modules>
         <module>clearbox</module>
         <module>interfaces</module>
+        <module>layerpanel</module>
     </modules>
-    <groupId>com.github.gwt-DateTimeBox</groupId>
-    <version>0.1.0-SNAPSHOT</version>
-	
-	<packaging>pom</packaging>
 
     <properties>
         <gwt.version>2.6.0</gwt.version>
