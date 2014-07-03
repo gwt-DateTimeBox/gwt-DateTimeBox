@@ -2,7 +2,6 @@
 
 }
 
-
 .grid td {
     border-bottom: 1px solid #EDEDED;
     border-right: 1px solid #EDEDED;
@@ -10,7 +9,7 @@
 
 .grid div {
     height: 42px;
-    line-height: 42px;
+    line-height: 21px;
 }
 
 .isFiller {
