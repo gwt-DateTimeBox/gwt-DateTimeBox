@@ -1,0 +1,123 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+    <ui:with field="res" type="com.github.gwt.sample.showcase.client.resources.WidgetShowcaseResources"/>
+
+    <ui:style>
+        .titleBar {
+            padding: 0 10px;
+            border-bottom: 1px solid #C3C3C3;
+        }
+
+        .title {
+            color: #7b8fae;
+            font-size: 20pt;
+            font-weight: bold;
+            text-shadow: #ddd 3px 3px 1px;
+            margin: 0;
+            padding: 0 0 0 4px;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 16pt;
+            margin: 0;
+            padding: 0 0 0 6px;
+        }
+
+        .mainMenu {
+            background-color: #d7dde8;
+            border-right: 1px solid #c3c3c3;
+        }
+
+        .contentButtons {
+            background-color: #d7dde8;
+            border-bottom: 1px solid #c3c3c3;
+            padding: 0 10px;
+        }
+
+        .content {
+            margin: 10px;
+        }
+
+    </ui:style>
+
+    <g:DockLayoutPanel unit='PT'>
+        <g:north
+                size='55'>
+            <g:HTMLPanel
+                    styleName='{style.titleBar}'>
+                <table
+                        cellpadding='0'
+                        cellspacing='0'
+                        width='100%'>
+                    <tr>
+                        <td>
+                            <table
+                                    cellpadding='0'
+                                    cellspacing='0'>
+                                <tr>
+                                    <td
+                                            style='line-height:0px'>
+                                        <!-- Logo Image. -->
+                                        <g:Image
+                                                resource='{res.gwtLogo}' />
+                                    </td>
+                                    <td>
+                                        <!-- Title and subtitle. -->
+                                        <h1
+                                                class='{style.title}'>
+                                            <ui:msg
+                                                    key='mainTitle'>Google Web Toolkit</ui:msg>
+                                        </h1>
+                                        <h2
+                                                class='{style.subtitle}'>
+                                            <ui:msg
+                                                    key='mainSubTitle'>DateTimeBox</ui:msg>
+                                        </h2>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </g:HTMLPanel>
+        </g:north>
+
+        <g:center>
+            <g:DockLayoutPanel
+                    unit='PX'>
+                <!-- Main menu tree. -->
+                <g:lineStart
+                        size='225'>
+                    <g:ScrollPanel
+                            styleName='{style.mainMenu}'>
+                        <c:CellTree
+                                ui:field='mainMenu' />
+                    </g:ScrollPanel>
+                </g:lineStart>
+
+                <!-- Main content area. -->
+                <g:center>
+                    <g:DockLayoutPanel
+                            unit='PT'>
+
+                        <g:north
+                                size='20'>
+                            <g:FlowPanel
+                                    styleName='{style.contentButtons}'>
+                            </g:FlowPanel>
+                        </g:north>
+
+                        <g:center>
+                            <g:SimpleLayoutPanel styleName="{style.content}"
+                                    ui:field='contentPanel' />
+                        </g:center>
+                    </g:DockLayoutPanel>
+                </g:center>
+            </g:DockLayoutPanel>
+        </g:center>
+
+    </g:DockLayoutPanel>
+</ui:UiBinder>

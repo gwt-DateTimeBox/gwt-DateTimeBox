@@ -16,6 +16,7 @@
         <module>pager</module>
         <module>datetimepicker</module>
         <module>datetimebox</module>
+        <module>showcase</module>
     </modules>
 
     <properties>
@@ -32,6 +33,18 @@
             <dependency>
                 <groupId>com.github.gwt-DateTimeBox</groupId>
                 <artifactId>interfaces</artifactId>
+                <version>${project.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>datetimebox</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>datetimebox</artifactId>
                 <version>${project.version}</version>
                 <classifier>sources</classifier>
             </dependency>
