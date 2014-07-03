@@ -35,6 +35,7 @@ import java.util.Date;
 class ClearDateBox extends ClearBox<String> implements HasDate,
                                                        HasFocusHandlers {
 
+    @SuppressWarnings("deprecation")
     private static final DateTimeFormat DEFAULT_FORMAT
             = DateTimeFormat.getShortDateTimeFormat();
     private DateTimeFormat format;

@@ -164,6 +164,7 @@ public class DateTimeBox extends Composite implements HasValue<Date> {
         dateTimePicker = initPicker();
         popup.setWidget(dateTimePicker);
 
+        @SuppressWarnings("deprecation")
         Element popupContent = DOM.getParent(dateTimePicker.getElement());
         popupContent.setAttribute("style", "height: 100%;");
 
@@ -175,6 +176,7 @@ public class DateTimeBox extends Composite implements HasValue<Date> {
         });
     }
 
+    @SuppressWarnings("deprecation")
     protected DateTimePicker initPicker() {
         Date initial = new Date();
         initial.setMinutes(0);
