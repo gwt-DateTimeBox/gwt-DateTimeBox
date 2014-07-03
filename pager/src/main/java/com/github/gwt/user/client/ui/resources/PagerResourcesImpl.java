@@ -20,7 +20,7 @@ import com.google.gwt.core.client.GWT;
 
 /**
  * {@link com.github.gwt.user.client.ui.Pager} resources.
- * In order to give the possibility to client to replace the whole
+ * In order to give the possibility to replace the whole
  * resources bundle in gwt.xml file (replace-with), resources are moved
  * to "stub" and are instantiated by GWT.create() method.
  *
@@ -31,13 +31,15 @@ import com.google.gwt.core.client.GWT;
 public class PagerResourcesImpl {
 
     /**
-     * In order to give the possibility to client to change resources in gwt.xml.
+     * In order to give the possibility to change resources in gwt.xml.
      *
      * <replace-with class="custom.resources.ResourcesImpl">
-     *     <when-type-is class=com.github.gwtdatetimebox.resources.CellGridResourcesImpl"/>
+     *     <when-type-is class=com.github.gwt.user.client.ui
+     *     .resources.PagerResourcesImpl"/>
      * </replace-with>
      */
-    public static final PagerResourcesStub impl = GWT.create(PagerResourcesStub.class);
+    public static final PagerResourcesStub impl
+            = GWT.create(PagerResourcesStub.class);
 
     public static PagerResources pagerResources() {
         return impl.getPagerResources();
