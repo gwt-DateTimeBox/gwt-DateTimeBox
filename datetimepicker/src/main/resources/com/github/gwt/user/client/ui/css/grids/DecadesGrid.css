@@ -1,0 +1,56 @@
+.grid {
+
+}
+
+
+.grid td {
+    border-bottom: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+}
+
+.grid div {
+    height: 42px;
+    line-height: 42px;
+}
+
+.isFiller {
+    font-size: 85%;
+    font-weight: normal;
+    color: #999999;
+    text-align: center;
+    outline: none;
+}
+
+.cell {
+    font-size: 85%;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
+
+.isHighlighted {
+    background: #F0E68C;
+}
+
+
+.isDisabled {
+    color: #AAAAAA;
+}
+
+.isValue {
+    color: #950a0f;
+}
+
+.isValueAndHighlighted {
+    color: #950a0f;
+}
+
+.isSelected {
+    font-size: 85%;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    background: none repeat scroll 0 0 #D7DFE8;
+}
+

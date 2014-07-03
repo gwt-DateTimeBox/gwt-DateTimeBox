@@ -14,6 +14,7 @@
         <module>layerpanel</module>
         <module>cellgrid</module>
         <module>pager</module>
+        <module>datetimepicker</module>
     </modules>
 
     <properties>
@@ -30,6 +31,66 @@
             <dependency>
                 <groupId>com.github.gwt-DateTimeBox</groupId>
                 <artifactId>interfaces</artifactId>
+                <version>${project.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>clearbox</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>clearbox</artifactId>
+                <version>${project.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>pager</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>pager</artifactId>
+                <version>${project.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>cellgrid</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>cellgrid</artifactId>
+                <version>${project.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>datetimepicker</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>datetimepicker</artifactId>
+                <version>${project.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>layerpanel</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.gwt-DateTimeBox</groupId>
+                <artifactId>layerpanel</artifactId>
                 <version>${project.version}</version>
                 <classifier>sources</classifier>
             </dependency>

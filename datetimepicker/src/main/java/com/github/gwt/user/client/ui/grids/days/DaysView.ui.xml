@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:days='urn:import:com.github.gwt.user.client.ui.grids.days'>
+
+    <g:VerticalPanel>
+        <days:DaysOfWeekView ui:field="weekDayNames"/>
+        <days:DaysGrid ui:field="grid"/>
+    </g:VerticalPanel>
+
+</ui:UiBinder>
