@@ -102,7 +102,7 @@ public class DateTimeBox extends Composite implements HasValue<Date> {
 
     @UiHandler("button")
     void onButtonClick(ClickEvent event) {
-        popup.show();
+        popup.showRelativeTo(button);
     }
 
     public ClearBoxSpecification<String> clearBox() {
