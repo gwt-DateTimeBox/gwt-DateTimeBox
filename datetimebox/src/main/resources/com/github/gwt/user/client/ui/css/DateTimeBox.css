@@ -1,0 +1,22 @@
+.dateTimeBox {
+
+}
+
+.dateTimeBox * {
+    width: auto;
+    height: auto;
+    outline: none;
+}
+
+.popup {
+    width: 194px;
+    height: 208px;
+}
+
+.calButton {
+    outline: none;
+}
+
+.calButton * {
+    vertical-align: middle;
+}

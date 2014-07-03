@@ -1,0 +1,9 @@
+<module>
+    <inherits name='com.google.gwt.user.User'/>
+
+    <inherits name="com.github.gwt.user.ClearBox"/>
+    <inherits name="com.github.gwt.user.DateTimePicker"/>
+
+    <source path="client"/>
+
+</module>

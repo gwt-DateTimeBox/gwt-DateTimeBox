@@ -15,6 +15,7 @@
         <module>cellgrid</module>
         <module>pager</module>
         <module>datetimepicker</module>
+        <module>datetimebox</module>
     </modules>
 
     <properties>
