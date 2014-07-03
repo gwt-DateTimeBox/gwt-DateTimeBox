@@ -28,7 +28,6 @@ package com.github.gwt.user.client.ui;
  * @version     %I%, %G%
  * @since       1.0
  */
-
 public interface HasValidation<T> {
 
     /**
