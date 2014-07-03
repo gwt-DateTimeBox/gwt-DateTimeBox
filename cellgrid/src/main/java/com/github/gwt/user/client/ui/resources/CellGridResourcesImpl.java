@@ -31,13 +31,15 @@ import com.google.gwt.core.client.GWT;
 public class CellGridResourcesImpl {
 
     /**
-     * In order to give the possibility to client to change resources in gwt.xml.
+     * In order to give the possibility to change resources in gwt.xml.
      *
      * <replace-with class="custom.resources.ResourcesImpl">
-     *     <when-type-is class=com.github.gwtdatetimebox.resources.CellGridResourcesImpl"/>
+     *     <when-type-is class=com.github.gwt.user.client.ui
+     *     .resources.CellGridResourcesImpl"/>
      * </replace-with>
      */
-    public static final CellGridResourcesStub impl = GWT.create(CellGridResourcesStub.class);
+    public static final CellGridResourcesStub impl
+            = GWT.create(CellGridResourcesStub.class);
 
     public static CellGridResources cellGridResources() {
         return impl.getCellGridResources();
