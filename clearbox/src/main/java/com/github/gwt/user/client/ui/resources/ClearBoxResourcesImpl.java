@@ -30,13 +30,15 @@ import com.google.gwt.core.client.GWT;
 public class ClearBoxResourcesImpl {
 
     /**
-     * In order to give the possibility to client to change resources in gwt.xml.
+     * In order to give the possibility to change resources in gwt.xml.
      *
      * <replace-with class="custom.resources.ResourcesImpl">
-     *     <when-type-is class=com.github.gwtdatetimebox.resources.ClearBoxResourcesStub"/>
+     *     <when-type-is class=com.github.gwt.user.client.ui
+     *     .resources.ClearBoxResourcesImpl"/>
      * </replace-with>
      */
-    public static final ClearBoxResourcesStub impl = GWT.create(ClearBoxResourcesStub.class);
+    public static final ClearBoxResourcesStub impl
+            = GWT.create(ClearBoxResourcesStub.class);
 
     public static ClearBoxResources clearBoxResources() {
         return impl.getClearBoxResources();
